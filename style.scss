@@ -1,0 +1,27 @@
+[data-aos="revel-right"]{
+    position: relative;
+    overflow: hidden;
+
+&::after{
+    content: '';
+    display: block;
+    position: absolute;
+    transition-property: transform;
+    transition-timing-function: ease-in;
+    transition-duration: 5s;
+    transition-delay: inherit;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+}
+}
+
+[data-aos="revel-right"]{
+    &.aos-animate{
+        &:after{
+            transform: translateX(-100%);
+        }
+    }
+}

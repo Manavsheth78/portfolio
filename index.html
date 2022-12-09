@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Home page</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/568dd43f5d.js" crossorigin="anonymous"></script>
+       <script>
+        function myloader(){
+            var preloader = document.getElementById("loading");
+            preloader.style.display = "none";
+            
+        }
+        </script>
+        
+</head>
+
+<body onload="myloader()">
+    <div id="loading">
+
+    </div>
+    <div class="header" id="header">
+        <div class="container">
+            <nav>
+                <a href="Professional  Logo/3.png" target="_blank">
+                <img src="Professional  Logo/3.png" alt="logo" class="logo"> </a>
+                <ul id="sidemenu">
+                    <li> <a href="#header">Home</a></li>
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#service">Service</a></li>
+                    <li> <a href="#">Portfolio</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            
+            <div class="header-text">
+                <p> Front-End Web Developer</p>
+                <h1> Hi, I'm <span> Manav </span> Sheth <br> from svit </h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------ABOUT----------- -->
+
+        <div class="about" id="about" >
+            <div class="container">
+                <div class="row">
+                    <!-- data-aos="flip-left" -->
+                    <div class="about-col-1" data-aos="revel-right" data-aos-mirror="true" >
+                        <img src="images/user_sheth.jpg" alt="user">
+                    </div>
+                    <div class="about-col-2" data-aos="fade-left" data-aos-delay="500" data-aos-mirror="true"  >
+                        <h1 class="subtitle"> About Me</h1>
+                        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus nam obcaecati fugiat quae corrupti ex debitis harum deserunt fuga hic sit, eaque impedit officiis assumenda totam soluta animi quia et! Necessitatibus asperiores officia excepturi quasi labore tenetur pariatur, minus qui repellat dolor ab nihil nostrum autem, iste eius praesentium doloremque provident delectus sunt aliquam? Aperiam adipisci necessitatibus atque impedit vitae. Quod totam eligendi voluptates dolorem omnis eaque, doloribus excepturi dolorum!</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')"> Experience</p>
+                            <p class="tab-links" onclick="opentab('education')"> Education</p>
+                            
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li> <span> UI/UX</span> <br> DESIGNING WEB APP </li>
+                                <li> <span> WEB Developer</span> <br> Web app Development</li>
+                                <li> <span> App Developer</span> <br> Building Andriod/ios apps </li>
+                                
+                            </ul>
+                        </div>
+                        
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                    <li> <span> Hackathon</span><br>
+                                        Participating Hackathons </li>
+                                    
+                                <li> <span> Event head</span> <br> Cultral Fest Prakarsh </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li> <span> 2020- current </span> <br>
+                                    IT engineering  </li>
+                                <li> <span> 2018-2020</span> <br> Higher secondary</li>
+                                <li> <span> 2018</span> <br> Secondary  </li>
+                                
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- ---------------service--------------- -->
+
+        <div class="service" id="service">
+            <div class="container">
+                <h1 class="subtitle">My Services</h1>
+                <div class="service-list">
+                    <div >
+                        <i class="fa-solid fa-code"></i>
+                        <h2> Web Design</h2> <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis at, magnam eius dolorem, esse voluptates qui repellendus consequuntur, aliquid nobis fugit! Voluptas iste et quam incidunt facilis consectetur, omnis nesciunt!</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop-simple"></i>
+                        <h2> UI/UX</h2><br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis at, magnam eius dolorem, esse voluptates qui repellendus consequuntur, aliquid nobis fugit! Voluptas iste et quam incidunt facilis consectetur, omnis nesciunt!</p>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2> App Developer</h2><br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis at, magnam eius dolorem, esse voluptates qui repellendus consequuntur, aliquid nobis fugit! Voluptas iste et quam incidunt facilis consectetur, omnis nesciunt!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+           <!-- ---------------contact------------- -->
+           <div class="contact" id="contact">
+            <div class="container">
+                 <div class="row">
+                    <div class="contact-left">
+                        <h1 class="subtitle"> Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i> shethmanav2002@gmail.com</p>
+                        <p><i class="fa-sharp fa-solid fa-square-phone"></i> 9712661063</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/"> <i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/"> <i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.twitter"> <i class="fa-brands fa-square-twitter"></i></a>
+                        </div>
+                        <button class="btn btn2"><i class="fa-sharp fa-solid fa-download"></i> <a href="/mycv.png" download >Download CV </a></button>
+                
+                    </div>
+                    <div class="contact-right">
+                        <form >
+
+                         <input type="text" name="name" placeholder="Your name" required>
+                             <input type="text" name="mail" placeholder="Your Email" required>   
+                            <textarea name="Message"  rows="6" placeholder="Your message" required>
+
+                            </textarea>
+                            <button type="submit" class="btn btn2"> Submit</button>
+
+                        </form>
+                    </div>
+                 </div>
+            </div>
+           </div>
+
+
+
+
+
+
+
+
+
+
+
+    
+        <script>
+            var tablinks = document.getElementsByClassName('tab-links');
+            var tabcontents = document.getElementsByClassName('tab-contents');
+            function opentab(tabname)
+            {
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+
+<script>
+    var sidemeu = document.getElementById('sidemenu');
+    function openmenu(){
+        sidemeu.style.right='0';
+    }
+    function closemenu(){
+        sidemeu.style.right='-200px';
+    }
+</script>
+ 
+ <!-- aos data -->
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <script>
+   AOS.init({
+    offset: 350,
+    duration:1000,
+   });
+
+   
+ </script>
+
+</body>
+</html>

@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+#loading{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    background: url("images/Funnel.gif") no-repeat center center;
+    z-index: 9999;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+    color: white;
+}
+
+.header {
+    width: 100%;
+    /* height: 20vh; */
+    height: 100vh;
+    background-image:url('images/sheth_background1.png') ;
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    padding: 10px 10%;
+    /* border: 1px solid rgb(255, 209, 4); */
+
+}
+ 
+ nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+
+} 
+
+.logo{
+    width: 150px;
+
+}
+
+ nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+ }
+
+ nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    position: relative;
+ }
+
+ nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color:red ;
+    position: absolute;
+    left: 0px;
+    bottom: -6px;   
+    
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+
+ }
+
+ .header-text{
+    margin-top: 20%;
+    font-size: 30px;
+    /* border: 1px solid white; */
+ }
+
+ .header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+ }
+
+ .header-text h1 span{
+    color: red;
+ }
+
+
+/* ---------------ABOUT------------ */
+
+.about{
+    padding: 60px 0px;
+}
+
+.row{
+   
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+    /* border: 1px solid blue; */
+
+}
+
+.subtitle{
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin-right: 50px ;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::before{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    bottom: -6px; 
+    transition: .3s;
+}
+
+.tab-links.active-link::before{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0px;
+}
+
+.tab-contents ul li span{
+
+    color:rgb(255, 0, 102);
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+
+}
+
+/* ---------------service------------ */
+
+.service{
+    /* border: 1px solid white; */
+    padding: 30px 0px;
+    
+}
+
+.service-list{
+    display: grid ;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top:50px;
+    /* border: 1px solid slateblue; */
+    line-height: 25px;
+
+}
+
+.service-list div{
+    background-color: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition:  transform .5s;
+}
+
+.service-list div i{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.service-list div h2{
+    font-size: 32px;
+    font-weight: 500 ;
+    margin-bottom:  15px;
+}
+.service-list div:hover{
+    background-color: #ff004f;
+    transform: translateY(-10px);
+}
+/* -------------------contact---------- */
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px ;
+}
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+margin-top:30px ;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+.btn{
+    display: block;
+    width: fit-content;
+    /* height: 50px; */
+    margin: 50px auto;
+    padding: 14px 50px;
+    border-radius: 5px;
+    color: #fff;
+    border: 1px solid #ff004f;
+    background-color: #383134;
+    transition: 0.5s;
+}
+.btn a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn:hover{
+    background-color: #ff004f;
+    /* transform: translateY(-5px);  */
+}
+.btn.btn2{
+    display: inline-block;
+    background-color: #ff004f;
+}
+
+.contact-right form{
+    width: 100%;
+
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    margin: 15px 0;
+    background: #262626;
+    padding: 15px ;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+/* -------------RESPONSIVE------ */
+nav .fas{
+    display: none;
+}
+@media (max-width:600px) {
+    .header{
+        background-image: url(images/sheth-phone-2.png);
+        
+    }
+    header-text{
+        
+        margin-top: 100%;
+        font-size: 16px;
+        /* border: 1px solid white; */
+     }
+    
+     .header-text h1{
+        font-size: 30px;
+        margin-top: 20px;
+     }
+
+     nav .fas{
+        display: block;
+        font-size: 25px;
+
+    }
+
+    nav ul{
+        background-color: #ff004f;
+        position:fixed;
+        top: 0px;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        transition: right 0.5s;
+        
+
+
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+
+    }
+    nav ul .fas{
+        position:absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .subtitle{
+        font-size: 40px;
+    }
+    .about-col-1,.about-col-2{
+        flex-basis: 100%;
+    }
+
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px; 
+    }
+
+    .contact-left,.contact-right{
+        flex-basis: 100%;
+
+    }
+    
+    
+}
